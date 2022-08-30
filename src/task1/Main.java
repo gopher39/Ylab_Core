@@ -5,7 +5,7 @@ public class Main {
       int[][] arr = new int[5][5];
       int multiplier = 87;
       int mask = 78;
-      int firstElem = 23;
+      int firstElem = (int) ((System.nanoTime() / 2140000000) % 80);
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 firstElem = (firstElem * multiplier + (i * j)) % mask;
